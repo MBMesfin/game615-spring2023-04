@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AirplaneScript : MonoBehaviour
 {
-    float forwardSpeed = 50;
+    float forwardSpeed = 5;
     float rotateSpeed = 20;
 
 

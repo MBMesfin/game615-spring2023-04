@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -655,6 +655,7 @@ GameObject:
   - component: {fileID: 1796724714}
   - component: {fileID: 1796724715}
   - component: {fileID: 1796724716}
+  - component: {fileID: 1796724717}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -704,6 +705,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9901474ae3cd2dd48a72f06c6d21bb29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1796724717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796724713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4509a0159f454d4f97b5242be2faab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 2140262153}
+  Plane: {fileID: 1796724713}
+  PlaneRend: {fileID: 0}
+  ColorToUse: {r: 0, g: 0, b: 0, a: 0}
+  MatToUse: {fileID: 0}
 --- !u!1001 &2035739335
 PrefabInstance:
   m_ObjectHideFlags: 0
