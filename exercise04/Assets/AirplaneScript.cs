@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class AirplaneScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    float forwardSpeed = 50;
+    float rotateSpeed = 20;
+
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0, Space.Self);
+        gameObject.transform.Translate(transform.forward * forwardSpeed * Time.deltaTime, Space.World);
     }
 }
