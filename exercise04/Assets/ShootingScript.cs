@@ -32,13 +32,13 @@ public class ShootingScript : MonoBehaviour
             for (int i = 0; i < 100; i++)
             {
                 GameObject ice = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);
-                float rotXAmount = Random.Range(-89, -10);
-                float rotYAmount = Random.Range(0, 360);
-                ice.transform.Rotate(rotXAmount, rotYAmount, 0);
+                // float rotXAmount = Random.Range(-89, -10);
+                // float rotYAmount = Random.Range(0, 360);
+                // ice.transform.Rotate(rotXAmount, rotYAmount, 0);
                 Rigidbody rb = ice.GetComponent<Rigidbody>();
                 rb.AddForce(ice.transform.forward * 1000);
 
-                Destroy(ice, 2f);
+                Destroy(ice, 10f);
             }
 
         }

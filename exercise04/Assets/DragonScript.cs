@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DragonScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject player;
+    public float followSharpness = 0.05f;
+    //public Transform leader;
     void Start()
     {
         
@@ -13,6 +15,33 @@ public class DragonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Transform leader = player.transform;
+        transform.position += (leader.position - transform.position) * followSharpness;
+        transform.rotation = Quaternion.Lerp(
+                          transform.rotation, 
+                          leader.rotation, 
+                          followSharpness);
+    }
+
+    private void OnTriggerEnter(Collider other){
+         if (other.CompareTag("Player")){
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Bullet")){
+             
+                Destroy(gameObject);
+        }
+      }
+    
+    
+
+    void LateUpdate () {
+        // Transform leader = player.transform;
+        // transform.position += (leader.position - transform.position) * followSharpness;
+        // transform.rotation = Quaternion.Lerp(
+        //                   transform.rotation, 
+        //                   leader.rotation, 
+        //                   followSharpness);
     }
 }
+
