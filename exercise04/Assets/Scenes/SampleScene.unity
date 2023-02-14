@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -415,6 +415,7 @@ GameObject:
   - component: {fileID: 986681926}
   - component: {fileID: 986681925}
   - component: {fileID: 986681924}
+  - component: {fileID: 986681928}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -501,6 +502,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &986681928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986681923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9901474ae3cd2dd48a72f06c6d21bb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 2140262153}
 --- !u!1 &1805367358
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,9 +784,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8327775972016904533, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
+    - target: {fileID: 8327775972016904532, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 2140262153}
+    - target: {fileID: 8327775972016904533, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 6746903784813504038, guid: 02119e8c13ad3fc4686421e9ce26e56a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
