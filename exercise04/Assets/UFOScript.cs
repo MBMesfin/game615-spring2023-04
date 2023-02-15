@@ -18,7 +18,7 @@ public class UFOScript : MonoBehaviour
     void Update()
     {
         gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0, Space.Self);
-        gameObject.transform.Translate(transform.forward *3f*Time.deltaTime, Space.World);
+        gameObject.transform.Translate(transform.forward *10f*Time.deltaTime, Space.World);
        
     }
     private IEnumerator Countdown2() {
