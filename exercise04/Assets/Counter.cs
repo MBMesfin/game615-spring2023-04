@@ -5,7 +5,7 @@ using TMPro;
 
 public class Counter : MonoBehaviour
 {
-    public float timeRemaining = 60;
+    public float timeRemaining = 60*5;
 
     public bool timerIsRunning = false;
     public float TimeLeft;

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2857009307852205491}
   - component: {fileID: -3048526935488051868}
+  - component: {fileID: -6098411865479428566}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Enemy
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8327775972016904529, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
   followSharpness: 0.0004
+--- !u!65 &-6098411865479428566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237510306644342537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5863750043085885392
 GameObject:
   m_ObjectHideFlags: 0

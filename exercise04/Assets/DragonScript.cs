@@ -6,6 +6,7 @@ public class DragonScript : MonoBehaviour
 {
     public GameObject player;
     public float followSharpness = 0.05f;
+    public int score;
     //public Transform leader;
     void Start()
     {
@@ -25,11 +26,13 @@ public class DragonScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
          if (other.CompareTag("Player")){
-            Destroy(other.gameObject);
+            Destroy(gameObject);
+            score++;
         }
         if (other.CompareTag("Bullet")){
              
                 Destroy(gameObject);
+                score++;
         }
       }
     
@@ -43,7 +46,5 @@ public class DragonScript : MonoBehaviour
         //                   leader.rotation, 
         //                   followSharpness);
     }
-
-
 }
 
