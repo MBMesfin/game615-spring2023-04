@@ -39,7 +39,7 @@ public class Counter : MonoBehaviour
 
                 timeRemaining -= Time.deltaTime;
                TimerText.text = timeRemaining.ToString();
-               ScoreText.text = score.ToString();
+               //ScoreText.text = score.ToString();
 
             }
 

@@ -8,13 +8,12 @@ public class DragonScript : MonoBehaviour
     public GameObject player;
     public float followSharpness = 0.05f;
     public float score;
-    public TMP_Text ScoreCount;
+    
     
     //public Transform leader;
     void Start()
     {
-        GameObject obj= GameObject.Find("ScoreCount");
-        ScoreCount = obj.GetComponent<TMP_Text>();
+        
 
     }
 

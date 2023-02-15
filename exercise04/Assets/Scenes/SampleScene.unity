@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1710,6 +1710,10 @@ PrefabInstance:
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 6746903784813504038, guid: 02119e8c13ad3fc4686421e9ce26e56a, type: 3}
+    - target: {fileID: 8327775972016904532, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
+      propertyPath: ScoreCount
+      value: 
+      objectReference: {fileID: 1486773381}
     - target: {fileID: 8327775972016904532, guid: 170d8cbc200583641bebaeecd350b46c, type: 3}
       propertyPath: rotateSpeed
       value: 20

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AirplaneScript : MonoBehaviour
@@ -9,9 +10,11 @@ public class AirplaneScript : MonoBehaviour
     public GameObject Bullet;
     public int score;
 
+    public TMP_Text ScoreCount;
     void Start()
     {
-
+        GameObject obj = GameObject.Find("ScoreCount");
+        ScoreCount = obj.GetComponent<TMP_Text>();
     }
 
 
@@ -61,6 +64,7 @@ public class AirplaneScript : MonoBehaviour
          if (other.CompareTag("Enemy")){
             Destroy(other.gameObject);
             score++;
+            ScoreCount.text = "Score: " + score.ToString();
         }
         // if (other.CompareTag("Bullet")){
              
