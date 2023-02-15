@@ -15,6 +15,7 @@ public class Counter : MonoBehaviour
     public int score;
     int count = 0;
     public TMP_Text dragonCount;
+    //public int score;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class Counter : MonoBehaviour
 
                 timeRemaining -= Time.deltaTime;
                TimerText.text = timeRemaining.ToString();
+               ScoreText.text = score.ToString();
 
             }
 
