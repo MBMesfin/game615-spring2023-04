@@ -1,4 +1,4 @@
-https://mbmesfin.github.io/game615-spring2023-04/index
+(Play)[https://mbmesfin.github.io/game615-spring2023-04/exercise04/play/]
 
 Display a timer on the screen. If the player fails to collect all the collectable items before it reaches zero, destroy the player and display a "You Lose" message of some sort.
 
