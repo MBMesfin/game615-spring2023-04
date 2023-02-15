@@ -41,7 +41,7 @@ public class AirplaneScript : MonoBehaviour
         gameObject.transform.Translate(transform.forward * forwardSpeed * Time.deltaTime, Space.World);
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // This will instantiate and launch 100 prefabs of the banana car.
+            // This will instantiate and launch 100 prefabs .
             for (int i = 0; i < 100; i++)
             {
                 GameObject ice = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);

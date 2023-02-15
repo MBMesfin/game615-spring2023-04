@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DragonScript : MonoBehaviour
 {
     public GameObject player;
     public float followSharpness = 0.05f;
-    public int score;
+    public float score;
+    public TMP_Text ScoreCount;
+    
     //public Transform leader;
     void Start()
     {
@@ -28,6 +31,7 @@ public class DragonScript : MonoBehaviour
          if (other.CompareTag("Player")){
             Destroy(gameObject);
             score++;
+            ScoreCount.text = score.ToString();
         }
         if (other.CompareTag("Bullet")){
              
