@@ -29,18 +29,18 @@ public class DragonScript : MonoBehaviour
                           followSharpness);
     }
 
-    private void OnTriggerEnter(Collider other){
-         if (other.CompareTag("Player")){
-            Destroy(gameObject);
-            score++;
-            ScoreCount.text = score.ToString();
-        }
-        if (other.CompareTag("Bullet")){
+    // private void OnTriggerEnter(Collider other){
+    //      if (other.CompareTag("Player")){
+    //         Destroy(gameObject);
+    //         score++;
+    //         ScoreCount.text = score.ToString();
+    //     }
+    //     if (other.CompareTag("Bullet")){
              
-                Destroy(gameObject);
-                score++;
-        }
-      }
+    //             Destroy(gameObject);
+    //             score++;
+    //     }
+    //   }
     
     
 
