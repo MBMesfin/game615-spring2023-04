@@ -13,7 +13,9 @@ public class DragonScript : MonoBehaviour
     //public Transform leader;
     void Start()
     {
-        
+        GameObject obj= GameObject.Find("ScoreCount");
+        ScoreCount = obj.GetComponent<TMP_Text>();
+
     }
 
     // Update is called once per frame
