@@ -5,7 +5,7 @@ using TMPro;
 
 public class Counter : MonoBehaviour
 {
-    public float timeRemaining = 60;
+    public float timeRemaining = 6;
 
     public bool timerIsRunning = false;
     public float TimeLeft;
@@ -38,7 +38,7 @@ public class Counter : MonoBehaviour
             {
 
                 timeRemaining -= Time.deltaTime;
-               TimerText.text = timeRemaining.ToString();
+              TimerText.text = timeRemaining.ToString();
                //ScoreText.text = score.ToString();
 
             }
