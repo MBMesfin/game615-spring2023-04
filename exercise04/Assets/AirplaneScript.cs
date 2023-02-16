@@ -15,6 +15,7 @@ public class AirplaneScript : MonoBehaviour
     {
         GameObject obj = GameObject.Find("ScoreCount");
         ScoreCount = obj.GetComponent<TMP_Text>();
+        ScoreCount.text = "Score: 0/5";
     }
 
 
@@ -64,7 +65,7 @@ public class AirplaneScript : MonoBehaviour
          if (other.CompareTag("Enemy")){
             Destroy(other.gameObject);
             score++;
-            ScoreCount.text = "Score: " + score.ToString();
+            ScoreCount.text = "Score: " + score.ToString() + "/5";
         }
         // if (other.CompareTag("Bullet")){
              

@@ -33,17 +33,17 @@ public class Counter : MonoBehaviour
 
         {
 
-            if (timeRemaining > 0 && score < 20)
+            if (timeRemaining > 0 && score < 5)
 
             {
 
                 timeRemaining -= Time.deltaTime;
               TimerText.text = timeRemaining.ToString();
-               //ScoreText.text = score.ToString();
+               //ScoreText.text = score.ToString() + "/5";
 
             }
 
-            else if (timeRemaining > 0 && score == 20)
+            else if (timeRemaining > 0 && score == 5)
             {
                 ScoreText.text = "You Win!";
             }
@@ -73,7 +73,7 @@ public class Counter : MonoBehaviour
         {
             Destroy(other.gameObject);
             
-            dragonCount.text = count.ToString();
+            dragonCount.text = count.ToString() + "/5";
             count++;
         }
      

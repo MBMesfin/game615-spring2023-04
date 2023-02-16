@@ -293,7 +293,7 @@ MonoBehaviour:
   TimeLeft: 0
   TimerOn: 1
   ScoreText: {fileID: 1486773381}
-  TimerText: {fileID: 0}
+  TimerText: {fileID: 840441909}
   score: 1
   dragonCount: {fileID: 840441909}
 --- !u!1 &705507993
